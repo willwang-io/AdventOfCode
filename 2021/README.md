@@ -28,3 +28,11 @@ There is an obvious bug with this algorithm, for instance,
 after we replace the fourth number in a row, and the fifth number in that row 
 is originally zero, thus, the `bingo` function will still return true.
 Anyways, this is just not an OJ :). 
+
+### Day 5 Hydrothermal Venture
+
+Simulation, just some basic notes to have more elegant code:
+- Convert 2D array index, `[x,y]` into 1D `x * n + y`, where `n` is the length of row.
+- `|x1-x2| == |y1-y2|` to check two points 45-degree diagonal. 
+- Use while-loop is cleaner to check which direction goes from one direction
+to another. 
