@@ -33,9 +33,9 @@ def main():
     with open('input.txt') as file:
         for line in file:
             line = line.strip().split('->')
-            x1, y1 = line[0].split(',')
-            x2, y2 = line[1].split(',')
-            lst.append([int(x1), int(y1), int(x2), int(y2)])
+            x1, y1 = map(int, line[0].split(','))
+            x2, y2 = map(int, line[1].split(','))
+            lst.append([x1, y1, x2, y2])
     part1(lst)
     part2(lst)
 
