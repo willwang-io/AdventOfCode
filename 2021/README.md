@@ -36,3 +36,12 @@ Simulation, just some basic notes to have more elegant code:
 - `|x1-x2| == |y1-y2|` to check two points 45-degree diagonal. 
 - Use while-loop is cleaner to check which direction goes from one direction
 to another. 
+
+### Day 6 Lanternfish
+
+Use a hash map to track the number of occurrences of each timer, update each 
+timer by decreasing one of each day. For instance, today there are 8 fish with 
+timer 3, then tomorrow there will be 8 fish with timer 2. Lastly, be aware 
+when timer is 0. 
+
+Brute-force will only _work_ for part 1, not recommend for part 2. 
