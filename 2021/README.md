@@ -29,7 +29,7 @@ after we replace the fourth number in a row, and the fifth number in that row
 is originally zero, thus, the `bingo` function will still return true.
 Anyways, this is just not an OJ :). 
 
-### Day 5 Hydrothermal Venture
+### Day 5: Hydrothermal Venture
 
 Simulation, just some basic notes to have more elegant code:
 - Convert 2D array index, `[x,y]` into 1D `x * n + y`, where `n` is the length of row.
@@ -37,7 +37,7 @@ Simulation, just some basic notes to have more elegant code:
 - Use while-loop is cleaner to check which direction goes from one direction
 to another. 
 
-### Day 6 Lanternfish
+### Day 6: Lanternfish
 
 Use a hash map to track the number of occurrences of each timer, update each 
 timer by decreasing one of each day. For instance, today there are 8 fish with 
@@ -45,3 +45,7 @@ timer 3, then tomorrow there will be 8 fish with timer 2. Lastly, be aware
 when timer is 0. 
 
 Brute-force will only _work_ for part 1, not recommend for part 2. 
+
+
+### Day 7: The Treachery of Whales
+Brute-force. Exam period, no time to think something smarter, like binary search :stuck_out_tongue:
