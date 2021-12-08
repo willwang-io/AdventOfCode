@@ -49,3 +49,6 @@ Brute-force will only _work_ for part 1, not recommend for part 2.
 
 ### Day 7: The Treachery of Whales
 Brute-force. Exam period, no time to think something smarter, like binary search maybe :stuck_out_tongue:.
+
+### Day 8: Seven Segment Search
+TODO: add explanation to part 2
