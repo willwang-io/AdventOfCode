@@ -1,10 +1,3 @@
-def str_comp(s1, s2):
-    s1 = set(s1)
-    s2 = set(s2)
-    print(s1, s2)
-    return s2 - s1
-
-
 def part1(lst):
     ans = 0
     for a, b in lst:
