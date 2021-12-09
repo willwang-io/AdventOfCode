@@ -1,3 +1,3 @@
 # AdventOfCode
 
-Legal procrastination during exam period. 
+Legal procrastination reason during exam period. 
