@@ -56,5 +56,4 @@ Brute-force. Exam period, no time to think something smarter, like binary search
 
 ### Day 9: Smoke Basin
 - __part 2:__ DFS. Track the previous location's height. Then we only keep searching if the current height is greater than the previous height. Others are just traditional DFS, i.e., remember where already visited, and boundaries check. 
-
-Similar question: [Leetcode 200. Number of Islands](https://leetcode.com/problems/number-of-islands/).
+- 
