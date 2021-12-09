@@ -51,4 +51,5 @@ Brute-force will only _work_ for part 1, not recommend for part 2.
 Brute-force. Exam period, no time to think something smarter, like binary search maybe :stuck_out_tongue:.
 
 ### Day 8: Seven Segment Search
-TODO: add explanation to part 2
+- __part 1:__ straightforward
+- __part 2:__ Use set operators to determine the letter of each segment. From part 1 for instance, consider 1 and 7, we can confirm the top segment must be `a`, because it is in 7 but not in 1. Repeat this kind of logic until we get the letter for each segment confirmed. Finally, we just get all the segments need for each number. 
