@@ -53,3 +53,8 @@ Brute-force. Exam period, no time to think something smarter, like binary search
 ### Day 8: Seven Segment Search
 - __part 1:__ straightforward
 - __part 2:__ Use set operators to determine the letter of each segment. Take each number as a set of letters. From the very top example in the problem description, consider 1 and 7, we can confirm the top segment must be `a`, because all elements in 7 also in 1 except `a`. Repeat this kind of logic until we get the letter for each segment confirmed. Finally, we just get all the segments need for each number. 
+
+### Day 9: Smoke Basin
+- __part 2:__ DFS. Track the previous location's height. Then we only keep searching if the current height is greater than the previous height. Others are just traditional DFS, i.e., remember where already visited, and boundaries check. 
+
+Similar question: [Leetcode 200. Number of Islands](https://leetcode.com/problems/number-of-islands/).
