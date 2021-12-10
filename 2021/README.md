@@ -57,3 +57,5 @@ Brute-force. Exam period, no time to think something smarter, like binary search
 ### Day 9: Smoke Basin
 - __part 2:__ DFS. Track the previous location's height. Then we only keep searching if the current height is greater than the previous height. Others are just traditional DFS, i.e., remember where already visited, and boundaries check. 
 
+### Day 10: Syntax Scoring
+Classic stack parentheses problem. Two conditions need to be checked for matching parentheses, first is close parentheses unmatch the top of the stack, and second is the stack should empty at the end. Thus, that part 1 and part 2, respectively. 
