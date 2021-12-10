@@ -32,7 +32,7 @@ def solve(lst):
 
 def main():
     lst = []
-    with open('temp.txt') as file:
+    with open('input.txt') as file:
         for line in file:
             line = line.strip()
             lst.append(line)
