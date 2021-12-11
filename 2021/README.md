@@ -1,5 +1,7 @@
 # 2021
 
+Here are some brief intuitions of each day's problem. 
+
 ### Day 1: Sonar Sweep
 
 Straightforward
@@ -59,3 +61,9 @@ Brute-force. Exam period, no time to think something smarter, like binary search
 
 ### Day 10: Syntax Scoring
 Classic stack parentheses problem. Two conditions need to be checked for matching parentheses, first is close parentheses unmatch the top of the stack, and second is the stack should empty at the end. Thus, that part 1 and part 2, respectively. 
+
+### Day 11: Dumbo Octopus
+We could use backtracking to resolve the second condition for flashes. Two notes
+- flash first then increase by 1, because we could
+- use -1 to mark the current-step flashed octopus, so then increase by 1
+will become 0. 
