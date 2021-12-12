@@ -67,3 +67,6 @@ We could use backtracking to resolve the second condition for flashes. Two notes
 - flash first then increase by 1, because we could
 - use -1 to mark the current-step flashed octopus, so then increase by 1
 will become 0. 
+  
+### Day 12: Passage Pathing
+Another DFS. 
