@@ -70,3 +70,6 @@ will become 0.
   
 ### Day 12: Passage Pathing
 Another DFS. 
+
+### Day 13: Transparent Origami
+Simulations
