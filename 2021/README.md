@@ -73,3 +73,6 @@ Another DFS.
 
 ### Day 13: Transparent Origami
 Simulations
+
+### Day 14: Extended Polymerization
+Similar to day 6. Count the number of rules of the template in each step. 
