@@ -80,3 +80,6 @@ Similar to day 6. Count the number of rules of the template in each step.
 ### Day 15: Chiton
 [Bellman–Ford algorithm](https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm).
 Feel like generate that larger grid need more thinking than this, lol. 
+
+### Day 16: Packet Decoder
+The intuition is recursion. 
