@@ -82,4 +82,7 @@ Similar to day 6. Count the number of rules of the template in each step.
 Feel like generate that larger grid need more thinking than this, lol. 
 
 ### Day 16: Packet Decoder
-The intuition is recursion. 
+Backtracking
+
+### Day 17: Trick Shot
+Brute-force
