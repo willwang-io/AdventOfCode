@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Notice: I replaced '-' and ',' in input.txt to spaces.
+import re
 
 def solve():
     ans, ans2 = 0, 0
 
     with open('input.txt', encoding='utf-8') as f:
         for pair in f.readlines():
-            a, b, c, d = map(int, pair.rstrip().split())
+            a, b, c, d = map(int, re.findall(r'\d+', pair))
 
             if (c >= a and d <= b) or (c <= a and d >= b):
                 ans += 1
