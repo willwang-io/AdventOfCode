@@ -8,8 +8,7 @@ def solve():
 
     with open('input.txt', encoding='utf-8') as f:
         for pair in f.readlines():
-            pair = pair.rstrip()
-            a, b, c, d = map(int, pair.split())
+            a, b, c, d = map(int, pair.rstrip().split())
 
             if (c >= a and d <= b) or (c <= a and d >= b):
                 ans += 1
