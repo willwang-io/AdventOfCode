@@ -9,11 +9,12 @@ def solve():
     with open('input.txt', encoding='utf-8') as f:
         for line in f.readlines():
             line = line.rstrip().split()
-            if line[0] == 'noop':
+
+            lst.append(x)
+            if line[0] == 'addx':
                 lst.append(x)
-            else:
-                lst.extend([x, x])
                 x += int(line[1])
+
         lst.append(x)
 
         print(sum(i * lst[i - 1] for i in [20, 60, 100, 140, 180, 220]))
