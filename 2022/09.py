@@ -1,5 +1,5 @@
-# #!/usr/bin/env python
-# # -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # question summary: Given a list of element, A. In each step, A[i] will move to
 # certain position based on where A[i - 1] moved for 1 < i < len(A). Notice A[0]

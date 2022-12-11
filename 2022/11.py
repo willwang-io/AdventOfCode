@@ -1,5 +1,5 @@
-# #!/usr/bin/env python
-# # -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import heapq
 
@@ -29,15 +29,16 @@ def solve():
 
     cnt = [0] * len(rules)
 
-    mod = 1
+    mod = 1  # 3 for part 1 or just remove following 3 lines.
     for _, d, _, _ in rules:
         mod *= d
 
-    for _ in range(10000):
+    for _ in range(10000):  # 20 for part 1
         for i, levels in enumerate(worry_levels):
             cnt[i] += len(levels)
             fun, d, t, f = rules[i]
             for j in map(fun, levels):
+                # j //= 3  # for part 1
                 worry_levels[t if j % d == 0 else f].append(j % mod)
             worry_levels[i].clear()
 
