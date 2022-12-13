@@ -6,7 +6,7 @@ def solve():
     with open('input.txt', encoding='utf-8') as f:
         grid = []
         for line in f.readlines():
-            grid.append(list(map(lambda x: ord(x), line.rstrip())))
+            grid.append(list(map(ord, line.rstrip())))
 
         q = []
         m, n = len(grid), len(grid[0])
