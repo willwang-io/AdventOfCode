@@ -16,22 +16,30 @@ def main():
             x, y, dx, dy = map(int, match.groups())
             lst.append((x, y, dx, dy))
 
-    for i in range(100):
+    for i in range(1, 1000000000):
         for j, (x, y, dx, dy) in enumerate(lst):
             lst[j] = ((x + dx) % M, (y + dy) % N, dx, dy)
 
         grid = [[0] * M for _ in range(N)]
         for x, y, dx, dy in lst:
             grid[y][x] += 1
-        print(i)
+        # import os
+        # import time
+        # os.system('cls' if os.name == 'nt' else 'clear')
+        mat = []
+        ok = False
         for row in grid:
+            cur = ''
             for r in row:
                 if r > 0:
-                    print('*', end='')
+                    cur += '*'
                 else:
-                    print('.', end='')
-            print()
-        print('------------------')
+                    cur += '.'
+            if '*******************************' in cur:
+                ok = True
+        if ok:
+            print(i)
+            break
     
     # mid_x = N // 2
     # mid_y = M // 2
