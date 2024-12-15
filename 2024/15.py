@@ -1,6 +1,6 @@
 def main():
     grid = []
-    with open("test2.txt", "r") as f:
+    with open("in.txt", "r") as f:
         lines = f.readlines()
     
     parse_moves = False
@@ -62,11 +62,11 @@ def main():
         elif move == '<':
             for i in range(yy, y):
                 grid[xx][i] = grid[xx][i + 1]
-            grid[xx][yy] = '.'
+            grid[xx][y] = '.'
             y -= 1
         elif move == '^':
-            for i in range(xx, x, -1):
-                grid[i][yy] = grid[i - 1][yy]
+            for i in range(xx, x):
+                grid[i][yy] = grid[i + 1][yy]
             grid[x][yy] = '.'
             x -= 1
         elif move == 'v':
@@ -77,8 +77,13 @@ def main():
         for row in grid:
             print(''.join(row))
         print()
-
-
+    
+    ans = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j] == 'O':
+                ans += i * 100 + j
+    print(ans)
 
 
 if __name__ == "__main__":
